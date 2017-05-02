@@ -1,5 +1,4 @@
-# vuexvue
-
+# wechatdemo
 > A Vue.js project
 
 ## Build Setup
