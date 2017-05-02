@@ -1,12 +1,18 @@
 <template>
   <div id="app">
+    <music></music>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
+import Music from './components/music'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    Music
+  }
 }
 </script>
 
