@@ -1,4 +1,4 @@
-# vuexvue
+# wechatdemo
 
 > A Vue.js project
 
