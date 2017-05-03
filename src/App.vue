@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <music></music>
+    <music :audioSrc=audioSrc></music>
     <router-view></router-view>
   </div>
 </template>
@@ -10,12 +10,16 @@ import Music from './components/music'
 
 export default {
   name: 'app',
+  data  () {
+    return {
+      audioSrc: 'http://123.56.26.118:8080/Linki2uCenterTest/music/1.mp3'
+    }
+  },
   components: {
     Music
   }
 }
 </script>
-
 <style>
 html,body{
   margin:0;

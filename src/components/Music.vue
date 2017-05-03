@@ -2,7 +2,7 @@
   <div class="music">
     <div id="mus" v-bind:class=musClass @click="tiggermusic"></div>
     <audio id="audio" loop>   
-      <source src="http://123.56.26.118:8080/Linki2uCenterTest/music/1.mp3" type="audio/mpeg">
+      <source :src=audioSrc type="audio/mpeg">
     </audio>
   </div>
 </template>
@@ -11,6 +11,7 @@
 
 export default {
   name: 'music',
+  props:['audioSrc'],
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
